@@ -1,0 +1,74 @@
+/* Reset CSS */
+
+/* Box sizing border-box */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+li,
+figure,
+figcaption,
+blockquote,
+pre,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove list styles on ul, ol elements */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Set base font size and line height */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Remove default button styling */
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+/* Remove default table border */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Remove border on images inside links */
+a img {
+    border: none;
+}
