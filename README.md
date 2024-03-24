@@ -7,13 +7,13 @@ Este é um projeto de clone do WhatsApp desenvolvido como parte de um estudo sob
 - Envio de Mensagens: Os usuários podem enviar mensagens de texto, imagens e vídeos para outros usuários.
 
 ### Tecnologias Utilizadas
-- Frontend: HTML, CSS, JavaScript 
+- Frontend: HTML, CSS & Sass 
 
 ### Instalação
 
 - Clone o repositório:
 
-git clone https://github.com/seu-usuario/whatsapp-clone.git
+git clone https://alexfariasv.github.io/Clone_WhatsApp.git
 
 ### Licença
 Este projeto está licenciado sob a Licença MIT.
