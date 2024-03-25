@@ -23,7 +23,6 @@ img {
   height: 100vh;
   border: 1px solid var(--cinza);
   position: relative;
-  max-width: 500px;
 }
 .container .sidebar {
   width: 410px;
@@ -186,4 +185,167 @@ img {
 
 /* =============================== sidebar =============================== */
 /* =============================== chat ================================== */
-/* =============================== chat ================================== *//*# sourceMappingURL=style.css.map */
+.chat-container {
+  position: absolute;
+  top: 0;
+  left: 410px;
+  width: calc(100% - 410px);
+  height: 100%;
+  background-color: #CCC;
+  /* ================================ mensagens ================================ */
+}
+.chat-container .chat-navbar {
+  /* display: flex;
+  justify-content: space-between; */
+  height: 60px;
+  background-color: #EEEEEE;
+  border-left: 1px solid #DDD;
+  padding-left: 75px;
+}
+.chat-container .chat-navbar .chat-navbar p {
+  margin: 0;
+}
+.chat-container .chat-navbar .contactinfo-container {
+  display: inline-block;
+}
+.chat-container .chat-navbar .contactinfo-container .test {
+  display: flex;
+  place-items: center;
+}
+.chat-container .chat-navbar .contactinfo-container .test .user-name {
+  font-size: 16px;
+  height: 60px;
+  font-weight: 600;
+  line-height: 60px;
+  margin-left: 10px;
+}
+.chat-container .chat-navbar .chattools-container {
+  float: right;
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  margin-right: 20px;
+}
+.chat-container .chat-navbar .chattools-container li {
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 18px;
+  color: #80868A;
+  cursor: pointer;
+}
+.chat-container .messages-container {
+  background-color: #E1DAD2;
+  height: calc(100% - 120px);
+  position: relative;
+  /*         .guest-message:before {
+              content: "";
+              width: 0; 
+              height: 0; 
+              border-bottom: 17px solid transparent; 
+              border-right:17px solid #FFF; 
+              position: absolute;
+              top: 0;
+              left: -10px;
+          } */
+}
+.chat-container .messages-container .messages-container p {
+  margin: 0;
+}
+.chat-container .messages-container .bg-image {
+  background-image: url("../img/background_whats.png");
+  background-repeat: repeat;
+  opacity: 0.06;
+  width: 100%;
+  height: 100%;
+}
+.chat-container .messages-container .chat-messages {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding: 30px 80px;
+  box-sizing: border-box;
+}
+.chat-container .messages-container .chat-messages .box_model {
+  display: flex;
+}
+.chat-container .messages-container .chat-messages .box_model .guest-message {
+  background-color: #FFF;
+}
+.chat-container .messages-container .chat-messages p {
+  display: block;
+  color: #262626;
+  font-size: 14px;
+  padding: 7px 0 7px 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  width: 200px;
+}
+.chat-container .messages-container .user-message {
+  background-color: #DCF8C6;
+  float: right;
+}
+.chat-container .messages-container .user-message:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 17px solid transparent;
+  border-left: 17px solid #DCF8C6;
+  position: absolute;
+  top: 0;
+  right: -10px;
+}
+
+/* ========================= send message ========================= */
+.sendmessage-container {
+  position: relative;
+  background-color: #EFEFEF;
+  border-left: 1px solid #DDD;
+  height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#chatmessage {
+  position: absolute;
+  top: 10px;
+  left: 60px;
+  background-color: #FFF;
+  border: none;
+  height: 40px;
+  border-radius: 20px;
+  padding-left: 20px;
+  font-size: 16px;
+  width: 70%;
+  outline: none;
+}
+
+.sendmessage-container i {
+  font-size: 24px;
+  color: #80868A;
+  cursor: pointer;
+  height: 60px;
+  line-height: 60px;
+}
+
+.fa-microphone {
+  float: right;
+}
+
+/* =============================== chat ================================== */
+.fim {
+  display: none;
+}
+
+@media (max-width: 1120px) {
+  main, .container {
+    display: none;
+  }
+  .fim {
+    display: initial;
+  }
+}/*# sourceMappingURL=style.css.map */
