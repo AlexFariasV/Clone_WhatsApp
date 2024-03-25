@@ -1,10 +1,216 @@
-html, body , ul{
+:root {
+    --cinza: #a9a9
+}
+
+html,
+body,
+ul {
     font-family: 'Open Sans', sans-serif
+}
+
+body {
+    display: flex;
+}
+
+img {
+    width: 40px;
+    background-color: #CCC;
+    border-radius: 50%;
+
 }
 
 /* =============================== sidebar =============================== */
 
+.container {
+    height: 100vh;
+    border: 1px solid var(--cinza);
+    position: relative;
+    max-width: 500px;
 
+    .sidebar {
+        width: 410px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        .toolbar-containe {
+            background-color: #EEE;
+            width: 100%;
+            height: 60px;
+        }
+
+        .user-photo {
+            width: 40px;
+            border-radius: 50%;
+            position: absolute;
+            left: 15px;
+            top: 10px;
+            background-color: #CCC;
+        }
+
+        .auxicons-toolbar-container {
+            display: inline-block;
+            background-color: #F8F8F8;
+
+            .auxicons-toolbar-box {
+                float: right;
+                height: 60px;
+                line-height: 60px;
+                padding-right: 20px;
+
+                i {
+                    color: #80868A;
+                    font-size: 20px;
+                    margin: 0 15px 0 15px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .notification-container {
+            width: 100%;
+            height: 90px;
+            padding-top: 23px;
+            padding-left: 80px;
+            background-color: #9DE1FE;
+            color: #384c56;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .fas.fa-bell-slash {
+            width: 45px;
+            height: 45px;
+            text-align: center;
+            line-height: 45px;
+            border-radius: 50%;
+            font-size: 18px;
+            color: #9DE1FE;
+            background-color: #F5FCFF;
+            position: absolute;
+            top: 20px;
+            left: 15px;
+        }
+
+        .search-container {
+            position: relative;
+            height: 50px;
+            width: 100%;
+            padding: 7.5px 0 0 7.5px;
+            background-color: #F8F8F8;
+            color: #BDC1C3;
+
+            i {
+                position: absolute;
+                left: 30px;
+                top: 18px;
+                font-size: 14px;
+            }
+
+            #search {
+                border: none;
+                height: 35px;
+                width: 385px;
+                padding-left: 60px;
+                border-radius: 17.5px;
+                background-color: #FFF;
+                outline: none;
+
+                #search::placeholder {
+                    color: #BDC1C3;
+                }
+            }
+        }
+
+        .contacts-container {
+
+            background-color: #FFF;
+            height: auto;
+
+            .contact-box {
+                height: 72px;
+                background-color: #FFF;
+                border-top: 1px solid #f2f2f2;
+                position: relative;
+                padding-left: 20px;
+            }
+
+            .contact-box:last-child {
+                border-bottom: 1px solid #f2f2f2;
+            }
+
+            .contact-box:hover {
+                background-color: #f4f5f5;
+                cursor: pointer;
+            }
+
+            .active-chat {
+                background-color: #E9EBEB;
+            }
+
+            .active-chat.contact-box:hover {
+                background-color: #E9EBEB;
+            }
+
+            .user-info {
+                margin-left: 10px;
+                padding-top: 10px;
+                display: inline-block;
+                height: 100%;
+            }
+
+            .user-info p,
+            .message-info p {
+                margin: 0;
+            }
+
+            .user-name {
+                font-size: 16px;
+                color: #000;
+                margin-bottom: 12px;
+            }
+
+            .user-messagepreview {
+                font-size: 14px;
+                color: #454545;
+            }
+
+            .fa-check-double {
+                margin-right: 5px;
+                color: #4FC3F7;
+            }
+
+            .message-info {
+                position: absolute;
+                top: 12px;
+                right: 20px;
+                display: inline-block;
+            }
+
+            .message-info .message-time {
+                font-size: 12px;
+                margin-bottom: 5px;
+                color: #CCC;
+            }
+
+            .message-pending {
+                background-color: #09d261;
+                color: #FFF;
+                width: 19px;
+                height: 19px;
+                line-height: 19px;
+                font-size: 12px;
+                font-weight: bold;
+                border-radius: 50%;
+                text-align: center;
+                float: right;
+            }
+
+        }
+    }
+
+}
 
 /* =============================== sidebar =============================== */
 /* =============================== chat ================================== */
