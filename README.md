@@ -1,5 +1,4 @@
-
-# WhatsApp Clone
+# Clone interface WhatsApp 
 
 Este é um projeto de clone do WhatsApp desenvolvido como parte de um estudo sobre desenvolvimento web e aplicativos de mensagens.
 
@@ -13,7 +12,7 @@ Este é um projeto de clone do WhatsApp desenvolvido como parte de um estudo sob
 
 - Clone o repositório:
 
-git clone https://alexfariasv.github.io/Clone_WhatsApp.git
+git clone https://alexfariasv.github.io/AlexFariasV/Clone_WhatsApp.git
 
 ### Licença
 Este projeto está licenciado sob a Licença MIT.
